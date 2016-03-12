@@ -5,6 +5,7 @@ var UserDetails = require('./UserDetails')
 var UserDetailsWrapper = require('./UserDetailsWrapper')
 var Link = require('react-router').Link
 var MainContainer = require('./MainContainer')
+var Loading = require('./Loading')
 
 
 function puke(object) {
@@ -24,7 +25,7 @@ function StartOver () {
 function Results (props) {
   if(props.isLoading){
     return (
-      <p>LOADING</p>
+      <Loading text='gimme a second' speed={100}/>
     )
   }
 
