@@ -14,7 +14,7 @@ function puke(object) {
 }
 
 function ConfirmBattle (props) {
-  return props.isLoading === true
+  return props.isLoading
     ? <Loading text='gimme a second' speed={100}/>
   :  <MainContainer>
         <h1>Confirm Players</h1>
